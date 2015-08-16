@@ -12,14 +12,14 @@ a.btn {
 	letter-spacing: 2px;
 	margin: 0px 0px 10px 0px;
 	color: #fff;
-	width: 200px;
+	width: 198px;
 	transition: background-color, .5s, border .5s, padding .5s, width .5s;
 	position: relative;
 	overflow: hidden;
 }
 
 a.btn:hover{
-	width: 190px;
+	width: 188px;
 	background-color: rgba(0,0,0,.4);
     border-color: #fff;
     padding-left: 20px;
@@ -74,7 +74,7 @@ a.btn::after{
 	letter-spacing: 2px;
 	margin: 0px 0px 10px 162px;
 	color: #fff;
-	width: 90px;
+	width: 88px;
 	transition: background-color, .5s, border .5s, padding .5s, width .5s;
 	position: relative;
 	overflow: hidden;
