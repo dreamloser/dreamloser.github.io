@@ -4,22 +4,21 @@ body { padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-
 
 a.btn {
 	display: block;
-	border: solid rgba(255,255,255,.5);
+	outline: 1px solid rgba(255,255,255,.5);
 	border-collapse: collapse;
-	border-width: 1px;
 	padding: 5px 20px 5px 10px;
 	text-decoration: none;
 	letter-spacing: 2px;
 	margin: 0px 0px 10px 0px;
 	color: #fff;
-	width: 198px;
+	width: 200px;
 	transition: background-color, .5s, border .5s, padding .5s, width .5s;
 	position: relative;
 	overflow: hidden;
 }
 
 a.btn:hover{
-	width: 188px;
+	width: 190px;
 	background-color: rgba(0,0,0,.4);
     border-color: #fff;
     padding-left: 20px;
@@ -66,15 +65,14 @@ a.btn::after{
 
 #submit {
 	display: inline-block;
-	border: solid rgba(255,255,255,.5);
-	border-collapse: collapse;
-	border-width: 1px;
+	outline: 1px solid rgba(255,255,255,.5);
+	border-collapse: collapse; 
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
 	letter-spacing: 2px;
 	margin: 0px 0px 10px 162px;
 	color: #fff;
-	width: 88px;
+	width: 90px;
 	transition: background-color, .5s, border .5s, padding .5s, width .5s;
 	position: relative;
 	overflow: hidden;
