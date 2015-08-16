@@ -5,7 +5,7 @@ $(function() {
 
 setTimeout(function(){
 $('.promo nav').fadeIn(500).css('display', 'inline-block');
-}, 3550)
+}, 3750)
 
 $('body').on('click', 'a.btn', function(){
    $('.promo').hide();
