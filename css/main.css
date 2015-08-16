@@ -59,6 +59,7 @@ a.btn::after{
 	position: relative;
 	margin-top: 10px;
 	-webkit-font-smoothing: antialiased;
+	overflow: initial;
 }		
 
 #submit {
