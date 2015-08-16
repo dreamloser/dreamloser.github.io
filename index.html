@@ -8,31 +8,60 @@
 		<script src="js/jquery-1.10.1.min.js"></script>
 	</head>
 	<body>
-
+	    <div class="promo">
+	        <div class="question">
+	        	<p></p>
+	        </div>
+	    	<nav>
+			<a class="btn" href="#">Vince Gilligan</a>			
+			<a class="btn" href="#">Ronald Reagan</a>			
+			<a class="btn" href="#">Dexter Morgan</a>
+		    </nav>
+	    </div>
 	  <div class="container">
 	  <div class="logo">
 	    	<img src="icon2.png" />
 	    	<div class="caption">
-	    	  <p>Plot Guru</p><br>
+	    	  <p>Plot Guru<br></p>
 	    	  <p>Make predictions while watching Netflix!</p>
 	    	  <p>coming soon to the Appstore<br><span class="join">Join our exclusive Early-Signup List and get every in-app purchase for free, forever.</span></p> 
 	    	</div>
 	  </div>
         <div class='subs'>
 			<input id="email" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-			<a class="btn" href="#">Submit</a>	
+			<a class="btns" id="submit" href="#">Submit</a>	
 		</div>
     </div>
 
 	    <div class="mask">
 	    </div>
-	    <div class="promo">
+	    <div class="promovideo">
 	    	<video autoplay="true" loop="true" preload="auto" muted>
 	    		<source src="3.mp4" type="video/mp4">
 	    	</video>
 	    </div>
 		
 	</body>
+<script>
+	(function($) {
+    $.fn.showText = function(content) {
+        var contentArray = content.split(" ", 5),
+            current = 0,
+            elem = this;
+        setInterval(function() {
+            if(current < contentArray.length) {
+                elem.text(elem.text() + " " + contentArray[current++]);
+            }
+        }, 250);
+    };
+})(jQuery);
+setTimeout(function(){
+$(".question p").showText("Who's making this delicious breakfirst?");
+}, 2000)
+</script>
 <script src='js/script.js'></script>
+
+
+
 
 </html>
