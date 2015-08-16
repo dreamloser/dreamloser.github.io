@@ -4,7 +4,7 @@ $(function() {
  
 
 setTimeout(function(){
-$('.promo nav').addClass('animated fadeIn');
+$('.promo nav').fadeIn(500).css('display', 'inline-block');
 }, 3550)
 
 $('body').on('click', 'a.btn', function(){
