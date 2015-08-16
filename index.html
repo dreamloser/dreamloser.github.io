@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Design the Web</title>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<style type="text/css">
+			@import url(http://fonts.googleapis.com/css?family=Raleway:400,100);
+			
+body { padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
+			
+
+a.btn {
+	display: inline-block;
+	border: 1px solid rgba(255,255,255,.5);
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin: 0px 0px 10px 114px;
+	color: #fff;
+	width: 90px;
+	transition: background-color, .5s, border .5s, padding .5s, width .5s;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	font-weight: 300;
+}
+
+input.email {
+	position: relative;
+	border: 1px solid rgba(255,255,255,.5);
+	padding: 5px 0px 5px 10px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+	background: transparent;
+	height: 27px;
+	color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+input.email:focus {
+	outline: none !important;
+    border:1px solid #E2284E;
+}
+
+a.btn:hover{
+	width: 85px;
+	background-color: rgba(0,0,0,.4);
+    border-color: #fff;
+    padding-left: 15px;
+}
+
+a.btn::after{
+	content: '';
+	display: block;
+	width: 110px; height: 100px;
+	background-color: #E2284E;
+	position: absolute;
+	top: 0px;
+	left: -110px;
+	transition: left .5s;
+	z-index: -5;
+}
+
+a.btn:hover::after{ left: 0px;}
+
+.promo video {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -10;
+	border: 1px solid #fff;
+}
+
+.mask {
+  background-color: rgba(0,0,0,.42);
+  border-bottom: 1px solid #ffc719;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -9;
+}
+
+.subs {
+	width: 340px;
+	position: relative; 
+	margin: 0 auto;
+}
+
+.container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); 
+}
+
+.logo img {
+	position: relative;
+	margin-left: 50%; 
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); 
+}
+
+.caption p {
+	color: #fff;
+	text-align: center;
+	margin-top: -42px;
+	font-size: 2em; 
+	font-weight: 500;
+}
+
+.caption p:nth-child(4) {
+	margin-top: 5px;
+	line-height: 22px;
+	color: #fff;
+	text-align: center; 
+	font-size: 1em; 
+	font-weight: 300;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.caption {
+		position: static;
+	}
+	.caption p {
+		font-size: 20px;
+	}
+}
+
+		</style>
+	</head>
+	<body>
+
+	  <div class="container">
+	  <div class="logo">
+	    	<img src="icon2.png" />
+	    	<div class="caption">
+	    	  <p>Plot Guru</p><br>
+	    	  <p>Make predictions while watching Netflix!</p>
+	    	  <p>coming soon on Appstore</p>
+	    	</div>
+	  </div>
+        <div class='subs'>
+			<input id="email" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			<a class="btn" href="#">Submit</a>	
+		</div>
+    </div>
+
+	    <div class="mask">
+	    </div>
+	    <div class="promo">
+	    	<video autoplay="true" loop="true" preload="auto" muted>
+	    		<source src="3.mp4" type="video/mp4">
+	    	</video>
+	    </div>
+		
+	</body>
+<script>
+</script>
+
+</html>
