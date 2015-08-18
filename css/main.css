@@ -24,6 +24,10 @@ a{text-decoration: none !important;color: #fff;}
 	overflow: hidden;
 }
 
+i.fa-star {
+	margin: 0px 11px 0px -27px;
+}
+
 .navs {
 	margin-right: 12px;
 	line-height: 2.5em;
