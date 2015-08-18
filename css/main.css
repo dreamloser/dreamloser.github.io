@@ -40,6 +40,8 @@ i.fa-star {
 	opacity: 1;
 }
 
+@media only screen and (min-width: 700px) {
+
 .navs:nth-child(1)::after {
 	content: '';
 	display: block;
@@ -112,6 +114,8 @@ i.fa-star {
 }
 
 .navs:hover::after{ top: 2em;}
+}
+
 
 a.btn {
 	display: block;
