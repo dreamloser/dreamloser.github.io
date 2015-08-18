@@ -2,6 +2,112 @@
 			
 body { padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
 
+a{text-decoration: none !important;color: #fff;}
+
+.container {
+	height: 2.5em;
+    background-color: rgba(0,0,0,.1);
+    width: 100%;
+    visibility: hidden;
+}
+
+.container:hover {
+	background-color: rgba(0,0,0,.3);
+}
+
+.navbar {
+    position: absolute;
+    z-index: 9; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 12px;
+	overflow: hidden;
+}
+
+.navs {
+	margin-right: 12px;
+	line-height: 2.5em;
+	opacity: .7;
+}
+
+.navs:hover {
+	color: #fff;
+	opacity: 1;
+}
+
+.navs:nth-child(1)::after {
+	content: '';
+	display: block;
+	width: 52px; height: 100px;
+	background-color: #E2284E;
+	position: absolute;
+	top: 45px;  
+    z-index: -5; 
+	transition: top .5s;
+	overflow: hidden;
+	margin-left: -1px; 
+	opacity: .7;
+}
+
+.navs:nth-child(2)::after {
+	content: '';
+	display: block;
+	width: 50px; height: 100px;
+	background-color: #E2284E;
+	position: absolute;
+	top: 45px;  
+    z-index: -5; 
+	transition: top .5s;
+	overflow: hidden;
+	margin-left: 60px;
+	opacity: .7;
+}
+
+.navs:nth-child(3)::after {
+	content: '';
+	display: block;
+	width: 50px; height: 100px;
+	background-color: #E2284E;
+	position: absolute;
+	top: 45px;  
+    z-index: -5; 
+	transition: top .5s;
+	overflow: hidden;
+	margin-left: 118px;
+	opacity: .7;
+}
+
+.navs:nth-child(4)::after {
+	content: '';
+	display: block;
+	width: 52px; height: 100px;
+	background-color: #E2284E;
+	position: absolute;
+	top: 45px;  
+    z-index: -5; 
+	transition: top .5s;
+	overflow: hidden;
+	margin-left: 182px;
+	opacity: .7;
+}
+
+.navs:nth-child(5)::after {
+	content: '';
+    display: block;
+    width: 65px;
+    height: 100px;
+    background-color: #E2284E;
+    position: absolute;
+    top: 45px;
+    z-index: -5;
+    transition: top .5s;
+    overflow: hidden;
+    margin-left: 248px;
+	opacity: .7;
+}
+
+.navs:hover::after{ top: 2em;}
+
 a.btn {
 	display: block;
 	outline: 1px solid rgba(255,255,255,.5);
@@ -152,7 +258,7 @@ a.btns:hover::after{ left: 0px;}
 	margin: 0 auto;
 }
 
-.container {
+.logoContainer {
 	visibility: hidden;
 	position: absolute;
 	left: 50%;
