@@ -293,6 +293,7 @@ a.btns:hover::after{ left: 0px;}
 .animatedSlow{-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 
 
+@media only screen and (min-width: 480px) {
 .play {
    visibility: hidden; 
    position: absolute;
@@ -300,7 +301,14 @@ a.btns:hover::after{ left: 0px;}
    left: 50%; 
    margin-top: -300px;
 }
+}
 
+@media only screen and (max-width: 480px) {
+  .play { 
+   transform: scale(2);
+   -webkit-transform: scale(2);
+}
+}
 
 div.qframe {
 	/* bottom: -10%;
