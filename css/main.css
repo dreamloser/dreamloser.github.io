@@ -22,12 +22,7 @@ a{text-decoration: none !important;color: #fff;}
     transform: translateX(-50%);
     margin-left: 12px;
 	overflow: hidden;
-}
-
-i.fa-star {
-	margin: 0px 11px 0px -27px;
-	visibility: hidden;
-}
+} 
 
 .navs {
 	margin-right: 12px;
@@ -123,17 +118,18 @@ a.btn {
 	border-collapse: collapse;
 	padding: 5px 20px 5px 10px;
 	text-decoration: none;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	margin: 0px 0px 10px 0px;
 	color: #fff;
-	width: 200px;
+	width: 155px;
 	transition: background-color, .5s, border .5s, padding .5s, width .5s;
 	position: relative;
 	overflow: hidden;
+	background-color: rgba(226,40,78,.7);
 }
 
 a.btn:hover{
-	width: 190px;
+	width: 145px;
 	background-color: rgba(0,0,0,.4);
     border-color: #fff;
     padding-left: 20px;
@@ -143,40 +139,12 @@ a.btn::after{
 	content: '';
 	display: block;
 	width: 10px; height: 100px;
-	background-color: #E2284E;
+	background-color: rgba(255,255,255,.7);
 	position: absolute;
 	top: 0px;
 	left: -10px;
 	transition: left .5s;
 }	
-
-.promo {
-	top:50%;
-	left:50%;
-	position:absolute;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50% -50%);
-	text-align: center;
-	-webkit-font-smoothing: antialiased;
-}	
-
-.promo p {
-	color: #fff;
-	font-weight: bold;
-	font-size: 2em;
-	-webkit-font-smoothing: antialiased;
-}	
-
-.promo nav { 
-	display: none;
-	color: #fff;
-	font-weight: normal;
-	position: relative;
-	margin-top: 10px;
-	-webkit-font-smoothing: antialiased;
-	overflow: initial;
-}		
 
 #submit {
 	display: inline-block;
@@ -321,5 +289,100 @@ a.btns:hover::after{ left: 0px;}
 	}
 }
 
+.animatedDelayed{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-delay:2s;animation-delay:2s;}
+.animatedSlow{-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 
-.animatedDelayed{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-delay:2s;animation-delay:.5s;}
+
+.play {
+   visibility: hidden; 
+   position: absolute;
+   top: 50%;
+   left: 50%; 
+   margin-top: -300px;
+}
+
+
+div.qframe {
+	/* bottom: -10%;
+	left: 50%;
+    position: absolute; */
+    -webkit-transform: scale(0.75) translateX(-67%);
+     -moz-transform: scale(0.75) translateX(-67%); 
+      -ms-transform: scale(0.75) translateX(-67%); 
+       -o-transform: scale(0.75) translateX(-67%); 
+          transform: scale(0.75) translateX(-67%);
+    opacity: .7;
+    -webkit-transition:1s ease;
+    -moz-transition:1s ease;
+    -o-transition:1s ease;
+    -ms-transition:1s ease;
+    transition:1s ease;
+    content:url(../iphone.png);
+}
+
+.clock {
+	position: relative;
+    width: 75px; 
+    margin-left: -36px; 
+    margin-top: -500px;
+}
+
+svg path {
+	stroke-width:4px;
+	-webkit-transform: scale(0.75) translateX(14%);
+     -moz-transform: scale(0.75) translateX(14%); 
+      -ms-transform: scale(0.75) translateX(14%); 
+       -o-transform: scale(0.75) translateX(14%); 
+          transform: scale(0.75) translateX(14%);
+}
+
+p.progressbar-text {
+	font-weight: bold;
+}
+
+
+.promo { 
+	position: relative;
+    margin-top: -209px;
+    margin-left: -111px;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}	
+
+.promo p {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+	width: 220px;
+	margin-top: 50%;
+}	
+
+
+.promo nav { 
+	display: inline-block;
+	color: #fff;
+	font-weight: normal;
+	position: relative;
+	margin-top: 10px;
+	-webkit-font-smoothing: antialiased;
+	overflow: initial;
+    margin-left: -210px;
+}		
+
+.tex {
+	visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-left: -183px;
+    margin-top: -135px;
+}
+
+.tex p:nth-child(2) {
+    font-size: 26px;
+}
