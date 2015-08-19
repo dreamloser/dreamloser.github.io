@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100);
-			
-body { overflow: hidden; padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
+html {overflow-x: hidden;}		
+body { position: relative; overflow-x: hidden; padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
 
 a{text-decoration: none !important;color: #fff;}
 
@@ -319,6 +319,11 @@ a.btns:hover::after{ left: 0px;}
 }
 .logoContainer {
 	width: 80%;
+    height: 60%;
+}
+.subs {
+    width: 80%;
+    margin: 0 auto;
 }
 }
 
