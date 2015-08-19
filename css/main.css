@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100);
 			
-body { padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
+body { overflow: hidden; padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
 
 a{text-decoration: none !important;color: #fff;}
 
@@ -304,7 +304,7 @@ a.btns:hover::after{ left: 0px;}
 }
 
 @media only screen and (max-width: 480px) {
-  .play { 
+.play { 
    visibility: hidden; 
    position: absolute;
    top: 50%;
@@ -312,6 +312,13 @@ a.btns:hover::after{ left: 0px;}
    margin-top: -300px;
    transform: scale(2);
    -webkit-transform: scale(2);
+}
+
+.container {
+	visibility: hidden;
+}
+.logoContainer {
+	width: 80%;
 }
 }
 
