@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700|Nunito);
 html {overflow-x: hidden;}		
-body { height: 100vh; position: relative; overflow-x: hidden; padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
+body { height: 100vh; position: relative; overflow: hidden; padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
 
 a{text-decoration: none !important;color: #fff;}
 
