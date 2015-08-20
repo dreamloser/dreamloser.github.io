@@ -7,13 +7,12 @@
 		<title>Design the Web</title>
 		<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
-		<link rel="stylesheet" href="css/animate.css"> 
-        <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">  
 		<link rel="stylesheet" href="css/main.css"> 
 		<script src="js/jquery-1.10.1.min.js"></script>
 	</head>
 	<body>
-	    <div class="container">
+	<!--    <div class="container">
 	    	<div class="twelve columns">
 	     		<div class="navbar">
 			     		<nav>
@@ -25,10 +24,10 @@
 			     		</nav>
 	     		</div>
      		</div>
-	    </div>
+	    </div>  -->
 	    <div class="tex">
 	    	<p>Nice!</p>
-	    	<p>We have just the thing for you!</p>
+	    	<p>We have just the<br> thing for you.</p>
 	    </div>
 	    <div class="play">
 	        <div class="qframe"> 
@@ -47,46 +46,28 @@
 	    </div>
 	  </div>
 	  <div class="logoContainer">
-	  <div class="logo">
-	    	<img src="icon2.png" />
-	    	<div class="caption">
-	    	  <p>Plot Guru<br></p>
-	    	  <p class="des">Make predictions while watching Netflix!</p>
-	    	  <p>coming soon to the Appstore<br><span class="join">Join our exclusive Early-Signup List and get every in-app purchase for free, forever.</span></p> 
-	    	</div>
-	  </div>
+			  <div class="logo">
+			    	<img src="icon2.png" /> 
+			  </div>
+			  <div class="brand">
+			    	<img width="192" src="plot_guru_official_wordmark_white.png" /> 
+			  </div>
+	    <p class="des">Make predictions in real time while watching Netflix!</p>
         <div class='subs'>
+            <p>Join Our Early Sign-Up list to get the app for free!</p>
 			<input id="email" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-			<a class="btns" id="submit" href="#">Submit</a>	
+			<a class="btns" id="submit" href="#">Join List</a>	
 		</div>
-    </div>
-
-	    <div class="mask">
-	    </div>
+    </div> 
+	    <div class="mask"></div>
 	    <div class="promovideo">
 	    	<video autoplay="true" loop="true" preload="auto" muted>
 	    		<source src="3.mp4" type="video/mp4">
 	    	</video>
-	    </div>
-		
-	</body>
-<script>
-/*	(function($) {
-    $.fn.showText = function(content) {
-        var contentArray = content.split(" ", 5),
-            current = 0,
-            elem = this;
-        setInterval(function() {
-            if(current < contentArray.length) {
-                elem.text(elem.text() + " " + contentArray[current++]);
-            }
-        }, 250);
-    };
-})(jQuery);
-setTimeout(function(){
-$(".question p").showText("Who's making this delicious breakfirst?");
-}, 2000)  */
-</script>
+	    </div> 
+		<div class="downBar"></div>
+		<img id="skip" src="icon_skip.png" />
+	</body> 
 <script src="js/pro.js"></script>
 <script src='js/script.js'></script>
 

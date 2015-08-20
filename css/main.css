@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700|Nunito);
 html {overflow-x: hidden;}		
 body { height: 100vh; position: relative; overflow-x: hidden; padding: 0px; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background: #E2284E; }
 
@@ -147,63 +147,50 @@ a.btn::after{
 }	
 
 #submit {
-	display: inline-block;
-	outline: 1px solid rgba(255,255,255,.5);
-	border-collapse: collapse; 
-	padding: 5px 10px 5px 10px;
-	text-decoration: none;
-	letter-spacing: 2px;
-	margin: 0px 0px 10px 162px;
-	color: #fff;
-	width: 90px;
-	transition: background-color, .5s, border .5s, padding .5s, width .5s;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	font-weight: 300;
+    display: inline-block; 
+    border-collapse: collapse;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    letter-spacing: 2px; 
+    color: #fff;
+    width: 100px;
+    transition: background-color, .5s, border .5s, padding .5s, width .5s;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 300;
+    float: right; 
+    z-index: 100;
+    background-color: #23AA60;
+    height: 28px;
+    line-height: 28px;
+    outline: 1px solid #fff;
+    font-size: 14px;
+    margin-top: 1px;
 }
 
 input.email {
-	position: relative;
-	border: 1px solid rgba(255,255,255,.5);
-	padding: 5px 0px 5px 10px;
-	text-decoration: none;
-	letter-spacing: 1px;
-	margin: 0px 0px 10px 0px;
-	width: 100%;
-	background: transparent;
-	height: 27px;
-	color: #fff;
+	    position: relative;
+    border: 1px solid rgba(255,255,255,.5);
+    padding: 5px 0px 5px 0px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px 0px;
+    width: calc(100% - 28%);
+    background: #fff;
+    height: 28px;
+    color: #E2284E;
     font-size: 14px;
     font-weight: 300;
+    text-align: center;
 }
 
-input.email:focus {
+input.email:focus { 
 	outline: none !important;
-    border:1px solid #E2284E;
-}
+    border:1px solid #fff;
+} 
 
-a.btns:hover{
-	width: 85px;
-	background-color: rgba(0,0,0,.4);
-    border-color: #fff;
-    padding-left: 15px;
-}
-
-a.btns::after{
-	content: '';
-	display: block;
-	width: 110px; height: 100px;
-	background-color: #E2284E;
-	position: absolute;
-	top: 0px;
-	left: -110px;
-	transition: left .5s;
-	z-index: -5;
-}
-
-a.btn:hover::after{ left: 0px;}
-a.btns:hover::after{ left: 0px;}
+a.btn:hover::after{ left: 0px;} 
 
 .promovideo video {
 	position: fixed;
@@ -218,8 +205,7 @@ a.btns:hover::after{ left: 0px;}
 }
 
 .mask {
-  background-color: rgba(0,0,0,.57);
-  border-bottom: 1px solid #ffc719;
+  background-color: rgba(0,0,0,.57); 
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -236,7 +222,7 @@ a.btns:hover::after{ left: 0px;}
 }
 
 .logoContainer {
-	visibility: hidden;
+	display: none;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -244,40 +230,31 @@ a.btns:hover::after{ left: 0px;}
     -webkit-transform: translate(-50%, -50%); 
 }
 
-.logo img {
-	position: relative;
-	margin-left: 50%; 
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); 
+.logo {
+	display: table;
+	margin: 0 auto;
+    transform: translateY(-50%);
 }
 
-.caption p {
+.brand {
+	display: table;
+	margin: 0 auto;
+    transform: translateY(-100%);
+}
+ 
+.des {
 	color: #fff;
 	text-align: center;
-	margin-top: -42px;
-	font-size: 2em; 
-	font-weight: 500;
+	margin-top: 30px;
+	font-size: 20px; 
+	font-weight: 700;
 }
-
-.caption p:nth-child(3) {
-	margin-top: 5px;
-	line-height: 22px;
-	color: #fff;
-	text-align: center; 
-	font-size: 1em; 
-	font-weight: 300;
-}
-
-.caption p:nth-child(2) {
-	margin-top: 5px;
-	font-size: 28px;  
-}
-
-.join {
-	color: #E2284E;
-	font-size: 17px;
-	font-weight: bold; 
-}
+  
+.subs p {
+	text-align: center;
+    color: #fff;
+    font-size: 16px;
+} 
  
 
 @media only screen and (max-width: 700px) {
@@ -297,7 +274,7 @@ a.btns:hover::after{ left: 0px;}
 .play {
    visibility: hidden; 
    position: absolute;
-   top: 50%;
+   top: 45%;
    left: 50%; 
    margin-top: -300px;
 }
@@ -307,7 +284,7 @@ a.btns:hover::after{ left: 0px;}
 .play { 
    visibility: hidden; 
    position: absolute;
-   top: 50%;
+   top: 45%;
    left: 50%; 
    margin-top: -300px;
    transform: scale(2);
@@ -327,16 +304,12 @@ a.btns:hover::after{ left: 0px;}
 }
 }
 
-div.qframe {
-	/* bottom: -10%;
-	left: 50%;
-    position: absolute; */
+div.qframe { 
     -webkit-transform: scale(0.75) translateX(-67%);
      -moz-transform: scale(0.75) translateX(-67%); 
       -ms-transform: scale(0.75) translateX(-67%); 
        -o-transform: scale(0.75) translateX(-67%); 
           transform: scale(0.75) translateX(-67%);
-    opacity: .7;
     -webkit-transition:1s ease;
     -moz-transition:1s ease;
     -o-transition:1s ease;
@@ -376,7 +349,6 @@ p.progressbar-text {
 
 .promo p {
 	color: #fff;
-	font-weight: bold;
 	font-size: 1em;
 	-webkit-font-smoothing: antialiased;
 	width: 220px;
@@ -398,16 +370,43 @@ p.progressbar-text {
 .tex {
 	visibility: hidden;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     color: #fff;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
-    margin-left: -183px;
-    margin-top: -135px;
+    transform: translate(-50%, -50%); 
+    width: 243px;
 }
 
 .tex p:nth-child(2) {
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.downBar {
+	position: absolute;
+    bottom: 0;
+    height: 10vh;
+    background-color: #fff;
+    width: 100%;
+}
+
+.downBar:after {
+	content:"";
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid #AAAB9D;
+}
+
+#skip {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	opacity: .35;
+    width: 50px;
+    cursor: pointer;
 }

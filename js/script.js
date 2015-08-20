@@ -28,22 +28,20 @@ $('.play').css('visibility','visible').addClass('slideInUp animatedSlow');
 
 
 $('a.btn').click(function(){
-   $('.play').hide();
+   $('.play').removeClass('slideInUp animatedSlow').addClass('slideOutDown animated');
 if (this.id == 'correct') {
-	$('.tex').css('visibility','visible').addClass('bounceIn animated');
+	$('.tex').css('visibility','visible');
 } else {
 	$('.tex p:nth-child(1)').text('Ouch!');
-	$('.tex p:nth-child(2)').text('looks like you need some more practice.');
-	$('.tex').css({'visibility':'visible','margin-left':' -241px','margin-top':' -135px'}).addClass('bounceIn animated');
+	$('.tex p:nth-child(2)').html('<p>looks like you<br> need some more practice.</p>');
+	$('.tex').css('visibility','visible');
 }
 
 setTimeout(function(){
-	    $('.tex').hide();
-		$('.container, .logoContainer').css('visibility', 'visible').addClass('animated fadeIn');
-		   setInterval(function(){
-		   $('.des').toggleClass("pulse animatedDelayed")
-		}, 3000) 
-	}, 1800)
+	    $('.mask').css('background-color','rgb(226,40,78)')
+	    $('.tex, #skip').hide();
+		$('.logoContainer').fadeIn(1000);
+	}, 2500)
 
    
 
@@ -51,20 +49,23 @@ setTimeout(function(){
 
 
 setTimeout(function(){
-     	$('.play').hide();
+     	$('.play, #skip').hide();
 	    $('.tex p:nth-child(1)').text('Ouch!');
 	    $('.tex p:nth-child(2)').text('looks like you need some more practice.');
 	    $('.tex').css({'visibility':'visible','margin-left':' -241px','margin-top':' -135px'}).addClass('bounceIn animated');
 	    setTimeout(function(){
 	    $('.tex').hide();
-		$('.container, .logoContainer').css('visibility', 'visible').addClass('animated fadeIn');
-		   setInterval(function(){
-		   $('.des').toggleClass("pulse animatedDelayed")
-		}, 3000) 
+		$('.logoContainer').fadeIn(1000);
+	    $('.mask').css('background-color','rgb(226,40,78)');
+		   
 	}, 1800)
 	}, 16000)
 
-
+$("#skip").click(function(){ 
+        $('.play, #skip').hide();
+		$('.logoContainer').fadeIn(1000);
+	    $('.mask').css('background-color','rgb(226,40,78)');
+});
 
 
 });
