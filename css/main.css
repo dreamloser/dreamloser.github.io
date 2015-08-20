@@ -144,6 +144,10 @@ a.btn::after{
 	top: 0px;
 	left: -10px;
 	transition: left .5s;
+}
+
+.email:hover {
+	color: #000;
 }	
 
 #submit {

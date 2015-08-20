@@ -52,7 +52,7 @@ setTimeout(function(){
      	$('.play, #skip').hide();
 	    $('.tex p:nth-child(1)').text('Ouch!');
 	    $('.tex p:nth-child(2)').text('looks like you need some more practice.');
-	    $('.tex').css({'visibility':'visible','margin-left':' -241px','margin-top':' -135px'}).addClass('bounceIn animated');
+	    $('.tex').css('visibility','visible');
 	    setTimeout(function(){
 	    $('.tex').hide();
 		$('.logoContainer').fadeIn(1000);
