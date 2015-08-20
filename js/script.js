@@ -24,11 +24,18 @@ setTimeout(function(){
 $('.play').css('visibility','visible').addClass('slideInUp animatedSlow');
 }, 3000)
 
+function sd() {
+	$('.play').removeClass('slideInUp animatedSlow').addClass('slideOutDown animated');
+}
 
-
+function vanish() {
+	    $('.mask').css('background-color','rgb(226,40,78)')
+	    $('.tex, #skip').hide();
+		$('.logoContainer').fadeIn(1000);
+}
 
 $('a.btn').click(function(){
-   $('.play').removeClass('slideInUp animatedSlow').addClass('slideOutDown animated');
+   sd();
 if (this.id == 'correct') {
 	$('.tex').css('visibility','visible');
 } else {
@@ -36,37 +43,22 @@ if (this.id == 'correct') {
 	$('.tex p:nth-child(2)').html('<p>looks like you<br> need some more practice.</p>');
 	$('.tex').css('visibility','visible');
 }
-
-setTimeout(function(){
-	    $('.mask').css('background-color','rgb(226,40,78)')
-	    $('.tex, #skip').hide();
-		$('.logoContainer').fadeIn(1000);
-	}, 2500)
-
-   
-
+setTimeout(vanish, 2500)
 });
 
-
 setTimeout(function(){
-     	$('.play, #skip').hide();
+	    sd();
 	    $('.tex p:nth-child(1)').text('Ouch!');
 	    $('.tex p:nth-child(2)').text('looks like you need some more practice.');
 	    $('.tex').css('visibility','visible');
-	    setTimeout(function(){
-	    $('.tex').hide();
-		$('.logoContainer').fadeIn(1000);
-	    $('.mask').css('background-color','rgb(226,40,78)');
-		   
-	}, 1800)
+	    setTimeout(vanish, 1800)
 	}, 16000)
 
 $("#skip").click(function(){ 
-        $('.play, #skip').hide();
+        $('.play, .tex, #skip').hide();
 		$('.logoContainer').fadeIn(1000);
 	    $('.mask').css('background-color','rgb(226,40,78)');
 });
-
 
 });
 
