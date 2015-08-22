@@ -10,8 +10,10 @@
 		<link rel="stylesheet" href="css/animate.css">  
 		<link rel="stylesheet" href="css/main.css"> 
 		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.tubular.js"> </script>
 	</head>
 	<body>
+	    <div id="player"></div>
 	<!--    <div class="container">
 	    	<div class="twelve columns">
 	     		<div class="navbar">
@@ -35,13 +37,13 @@
 	        <div class="clock" id="clock"></div>
 	    <div class="promo">
 	        <div class="question">
-	        	<p>Who's making this delicious breakfirst?</p>
+	        	<p>Quick! What did Michael get for Secret Santa?</p>
 	        </div>
 	    	<nav>
-			<a class="btn" href="#">Vince Gilligan</a>			
-			<a class="btn" href="#">Ronald Reagan</a>			
-			<a class="btn" id="correct" href="#">Dexter Morgan</a>
-			<a class="btn" href="#">Dylan Moran</a>
+			<a class="btn" href="#">An iPod</a>			
+			<a class="btn" href="#">A hat</a>			
+			<a class="btn" id="correct" href="#">A mitten</a>
+			<a class="btn" href="#">A cup</a>
 		    </nav>
 	    </div>
 	  </div>
@@ -60,16 +62,19 @@
 		</div>
     </div> 
 	    <div class="mask"></div>
-	    <div class="promovideo">
+	  <!--  <div class="promovideo">
 	    	<video autoplay="true" loop="true" preload="auto" muted>
 	    		<source src="3.mp4" type="video/mp4">
 	    	</video>
-	    </div> 
+	    </div>  -->
 		<div class="downBar"></div>
 		<img id="skip" src="icon_skip.png" />
 	</body> 
+<script>
+	$('#player').tubular();
+</script>
 <script src="js/pro.js"></script>
-<script src='js/script.js'></script>
+<script src="js/script.js"></script>
 
 
 
