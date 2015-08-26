@@ -136,7 +136,7 @@ setTimeout(function(){
             }
 }
 
-
+//inserted code end
 
         // resize handler updates width, height and offset of player after resize/init
         var resize = function() {
