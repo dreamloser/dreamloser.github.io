@@ -155,26 +155,25 @@ a.btn::after{
 }	
 
 #submit {
-    display: inline-block; 
-    border-collapse: collapse;
-    padding: 5px 10px 5px 10px;
-    text-decoration: none;
-    letter-spacing: 2px; 
+    display: inline-block;
+    border-collapse: collapse; 
+    text-decoration: none; 
     color: #fff;
-    width: 100px;
+    width: 110px;
     transition: background-color, .5s, border .5s, padding .5s, width .5s;
     position: relative;
     overflow: hidden;
     text-align: center;
-    font-weight: 300;
-    float: right; 
+    font-weight: bold;
+    float: right;
     z-index: 100;
     background-color: #23AA60;
-    height: 28px;
-    line-height: 28px;
+    height: 38px;
+    line-height: 36px;
     outline: 1px solid #fff;
     font-size: 14px;
     margin-top: 1px;
+    border: 0px;
 }
 
 input.email {
@@ -184,7 +183,7 @@ input.email {
     text-decoration: none;
     letter-spacing: 1px;
     margin: 0px 0px 10px 0px;
-    width: calc(100% - 28%);
+    width: calc(100% - 24%);
     background: #fff;
     height: 28px;
     color: #E2284E;
@@ -224,7 +223,7 @@ a.btn:hover::after{ left: 0px;}
 }
 
 .subs {
-	width: 440px;
+	width: 470px;
 	position: relative; 
 	margin: 0 auto;
 }
