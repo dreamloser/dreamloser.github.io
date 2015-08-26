@@ -18,8 +18,8 @@
         volumeUpClass: 'tubular-volume-up',
         volumeDownClass: 'tubular-volume-down',
         increaseVolumeBy: 0,
-        start: 102,
-        end: 114,
+        start: 104,
+        end: 116,
         minimumSupportedWidth: 600,
         modestbranding: 0
     };
