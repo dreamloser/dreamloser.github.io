@@ -322,6 +322,9 @@ a.btn:hover::after{ left: 0px;}
 input.email {
 	width: 100%;
 }
+.des {
+	margin-top: -30px;
+}
 }
 
 div.qframe { 
