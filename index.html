@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="css/animate.css">  
 		<link rel="stylesheet" href="css/main.css"> 
 		<script src="js/jquery-1.10.1.min.js"></script>
-		<script src="js/jquery.tubular.js"> </script>
 	</head>
 	<body>
 	    <div id="player"></div>
@@ -40,10 +39,10 @@
 	        	<p>Quick! What did Michael get for Secret Santa?</p>
 	        </div>
 	    	<nav>
-			<a class="btn" href="#">An iPod</a>			
-			<a class="btn" href="#">A hat</a>			
-			<a class="btn" id="correct" href="#">A mitten</a>
-			<a class="btn" href="#">A cup</a>
+			<a class="btn">An iPod</a>			
+			<a class="btn">A hat</a>			
+			<a class="btn" id="correct">A mitten</a>
+			<a class="btn">A cup</a>
 		    </nav>
 	    </div>
 	  </div>
@@ -68,12 +67,13 @@
 	    	</video>
 	    </div>  -->
 		<div class="downBar"></div>
-		<img id="skip" src="icon_skip.png" />
+		<img hidden id="skip" src="icon_skip.png" />
 	</body> 
-<script>
-	$('#player').tubular();
-</script>
 <script src="js/pro.js"></script>
+<script src="js/jquery.tubular.edited.js"> </script>
+<script>
+	$('#player').tubular(); 
+</script>
 <script src="js/script.js"></script>
 
 
