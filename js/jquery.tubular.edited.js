@@ -50,6 +50,8 @@
                     controls: 0,
                     showinfo: 0,
                     modestbranding: 1,
+                    frameborder: 0,
+                    iv_load_policy: 3,
                     wmode: 'transparent'
                 },
                 events: {
