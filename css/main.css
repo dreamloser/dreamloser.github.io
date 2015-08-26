@@ -305,7 +305,6 @@ a.btn:hover::after{ left: 0px;}
    transform: scale(2);
    -webkit-transform: scale(2);
 }
-
 .container {
 	visibility: hidden;
 }
@@ -316,6 +315,13 @@ a.btn:hover::after{ left: 0px;}
 .subs {
     width: 80%;
     margin: 0 auto;
+}
+#submit {
+    margin-right: 50%;
+    transform: translateX(50%);
+}
+input.email {
+	width: 100%;
 }
 }
 
