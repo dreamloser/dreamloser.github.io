@@ -221,26 +221,31 @@ a.btn:hover::after{ left: 0px;}
   height: 100%;
   z-index: -9;
 }
-
 .subs {
 	width: 470px;
 	position: relative; 
 	margin: 0 auto;
 }
-
 .logoContainer {
-	display: none;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); 
-}
-
+	visibility: hidden;
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: column;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content:center; 
+	-webkit-transform: translateY(-115%);
+	transform: translateY(-115%);
+    height: 80vh;
+    width: 100vw;
+} 
 .logo {
 	display: table;
 	margin: 0 auto;
-    transform: translateY(-50%);
+    transform: translateY(-50%); 
 }
 
 .brand {
@@ -261,7 +266,7 @@ a.btn:hover::after{ left: 0px;}
 	text-align: center;
     color: #fff;
     font-size: 16px;
-} 
+}  
  
 #player {
 	overflow: hidden;
@@ -284,7 +289,7 @@ a.btn:hover::after{ left: 0px;}
 .animatedSlow{-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 500px) {
 .play {
    visibility: hidden; 
    position: absolute;
@@ -294,7 +299,7 @@ a.btn:hover::after{ left: 0px;}
 }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 .play { 
    visibility: hidden; 
    position: absolute;
@@ -308,8 +313,12 @@ a.btn:hover::after{ left: 0px;}
 	visibility: hidden;
 }
 .logoContainer {
-	width: 80%;
-    height: 60%;
+	width: 100%; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 .subs {
     width: 80%;
@@ -328,14 +337,13 @@ input.email {
 	font-size: 16px;
 }
 .logo {
-	transform: translateY(-100%);
+	position: relative;
+	margin: 0 auto;
 }
 .brand { 
-    transform: translateY(-150%);
-}
-#player {
-	display: none;
-}
+    position: relative;
+    margin: 0 auto;
+} 
 }
 
 div.qframe { 
