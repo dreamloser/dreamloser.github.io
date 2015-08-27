@@ -316,14 +316,18 @@ a.btn:hover::after{ left: 0px;}
     margin: 0 auto;
 }
 #submit {
-    margin-right: 50%;
-    transform: translateX(50%);
+    display: table;   
+    margin: 0 auto;
+    float: none;
 }
 input.email {
 	width: 100%;
 }
 .des {
 	margin-top: -30px;
+}
+.logo {
+	transform: translateY(-80%);
 }
 }
 
