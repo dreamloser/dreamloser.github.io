@@ -227,20 +227,12 @@ a.btn:hover::after{ left: 0px;}
 	margin: 0 auto;
 }
 .logoContainer {
-	visibility: hidden;
-	display:-webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-flow: column;
-	-ms-flex-flow: column;
-	flex-flow: column;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content:center; 
-	-webkit-transform: translateY(-115%);
-	transform: translateY(-115%);
-    height: 80vh;
-    width: 100vw;
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); 
 } 
 .logo {
 	display: table;

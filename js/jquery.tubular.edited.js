@@ -127,13 +127,13 @@ if (this.id == 'correct') {
 } else {
     wrongAns();
 }
-setTimeout(vanish, 4000)
+setTimeout(vanish, 3500)
 });
 
 setTimeout(function(){
         sd();
         if ($('.tex').css('visibility') !== 'visible') {wrongAns()}
-        setTimeout(vanish, 4000)
+        setTimeout(vanish, 3500)
     }, 12000)
             }
 }
