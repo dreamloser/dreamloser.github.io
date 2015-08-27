@@ -32,7 +32,7 @@
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: fixed; z-index: -12; width: 100%; height: 90vh"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 90vh; z-index: -11; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: fixed; z-index: -12; width: 100%; height: 95vh"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 95vh; z-index: -11; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
         $('html,body').css({'width': '100%', 'height': '100%'});

@@ -325,9 +325,16 @@ input.email {
 }
 .des {
 	margin-top: -30px;
+	font-size: 16px;
 }
 .logo {
-	transform: translateY(-80%);
+	transform: translateY(-100%);
+}
+.brand { 
+    transform: translateY(-150%);
+}
+#player {
+	display: none;
 }
 }
 
@@ -420,7 +427,7 @@ p.progressbar-text {
 .downBar {
 	position: absolute;
     bottom: 0;
-    height: 10vh;
+    height: 5vh;
     background-color: #fff;
     width: 100%;
 }
