@@ -6,51 +6,51 @@
     
     // defaults
     var defaults = {
-        ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
-        videoId: 'B6jCMaiTqG0', 
-        mute: true,
+        ratio: 87/40, // usually either 4/3 or 16/9 -- tweak as needed
+        videoId: 'Vmb1tqYqyII', 
+        mute: false,
         repeat: true,
         width: $(window).width(),
-        wrapperZIndex: -15,
+        wrapperZIndex: 15,
         playButtonClass: 'tubular-play',
         pauseButtonClass: 'tubular-pause',
         muteButtonClass: 'tubular-mute',
         volumeUpClass: 'tubular-volume-up',
         volumeDownClass: 'tubular-volume-down',
         increaseVolumeBy: 0,
-        start: 104,
-        end: 116,
+        start: 123,
+        end: 142,
         minimumSupportedWidth: 600,
         modestbranding: 0
     };
 
     // methods
 
-    var tubular = function(node, options) { // should be called on the wrapper div
+    window.tubular = function(node, options) { // should be called on the wrapper div
         var options = $.extend({}, defaults, options),
-            $body = $('body') // cache body node
+            $body = $('.intros:first-child'), // cache body node
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: fixed; z-index: -12; width: 100%; height: 95vh"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 95vh; z-index: -11; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: absolute; z-index: 12; width: 100%; height: 100%; border-radius: 25px; -moz-border-radius: 25px;-webkit-border-radius: 25px; left:0; top: 0"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 1; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
         $('html,body').css({'width': '100%', 'height': '100%'});
         $body.prepend(tubularContainer);
-        $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
+        $node.css({position: 'absolute', 'z-index': options.wrapperZIndex, left: 0, top: 0});
 
         // set up iframe player, use global scope so YT api can talk
         window.player;
         window.onYouTubeIframeAPIReady = function() {
             player = new YT.Player('pg-player', {
-                width: options.width,
-                height: Math.ceil(options.width / options.ratio),
+                width: 876,
+                height: 399.5,
                 videoId: options.videoId,
                 playerVars: {
                     controls: 0,
                     showinfo: 0,
-                    modestbranding: 1,
-                    frameborder: 0,
+                    modestbranding: 0,
+                    frameborder: 1,
                     iv_load_policy: 3,
                     wmode: 'transparent'
                 },
@@ -78,73 +78,93 @@ var trigerOnce = true;
             }
             if (state.data === 1) {
 //game shows -- inserted by maxim.xu
+
+
 if (trigerOnce == true) {
 var circle = new ProgressBar.Circle('#clock', {
     color: '#E2284E',
+    trailColor: "#000",
     strokeWidth: 4,
     trailWidth: 1,
-    duration: 6000,
+    duration: 7500,
     text: {
-        value: '0'
+        value: '5'
     },
     step: function(state, bar) {
         bar.setText((bar.value() * 10).toFixed(0));
     }
 });
+ 
+    circle.animate(1, function() {
+        circle.animate(0);
+    })  
 
-circle.animate(1, function() {
-    circle.animate(0);
-})
-
-trigerOnce = false;
-
+trigerOnce = false; 
+ 
 }
+
+var answered = 0;
 
 setTimeout(function(){
 $('.play').css('visibility','visible').addClass('slideInUp animatedSlow');
-}, 1000);
+}, 4000);
 
 function sd() {
-    $('.play').removeClass('slideInUp animatedSlow').addClass('slideOutDown animated');
+    $('.play').removeClass('fadeIn animatedSlow').fadeOut(300);
 }
 
 function vanish() {
     $('.mask').css('background-color','rgb(226,40,78)')
-    $('.tex, #skip, #pg-container, #pg-player').fadeOut(200);
-    $('.logoContainer').fadeIn(1000);
-}
-
-function wrongAns() {
-    $('.tex p:nth-child(1)').text('Ouch!');
-    $('.tex p:nth-child(2)').html('<p>looks like you<br> need some more practice.</p>');
-    $('.tex').css('visibility','visible');
-}
+    $('.tex').hide();
+    $('.intros button, .intros button + p').fadeIn(1000);
+    $('#pg-container, #pg-player, #tubular-shield').remove();
+    $('body').css('overflow','visible');
+    $('#player').remove();
+    if (answered == 1) {
+        $('.intros button').html('<p>Not quite! But you were pretty close.</p>')
+    } else if (answered == 2) {
+        $('.intros button').html('<p>Nice! You have the true heart of a serial killer.</p>')
+    } else if (answered == 3) {
+        $('.intros button').html('<p>Not even close! <br>That shirt is ruined.</p>')
+    } else if (answered == 4){
+        $('.intros button').html('<p>Wrong! Those fumes could be toxic, you know.</p>')
+    } else { $('.intros button').html('<p>Hey! Make sure to click an answer next time!</p>') }
+    $('.intros button + p').html('Press the button to play it again.<p><a class="fuls" href="http://www.plotguru.com/demo">Full Screen Demo</a></p>');
+    $('.mask2').css('visibility','hidden');  
+} 
 
 $('a.btn').click(function(){
-   sd();
+$(this).css({'color':'rgba(255, 255, 255, .35)','background-color':'rgba(226, 40, 78, 1);'});
 if (this.id == 'correct') {
-    $('.tex').css('visibility','visible');
-} else {
-    wrongAns();
+    answered = 2;
+} else if (this.id == 'mouth') {
+    answered = 1;
+} else if (this.id == 'steal') {
+    answered = 3;
+} else if (this.id == 'fire') {
+    answered = 4;
 }
-setTimeout(vanish, 3500)
+setTimeout(function(){
+    sd(); 
+}, 500); 
 });
 
 setTimeout(function(){
-        sd();
-        if ($('.tex').css('visibility') !== 'visible') {wrongAns()}
-        setTimeout(vanish, 3500)
-    }, 12000)
+        sd(); 
+        setTimeout(vanish, 5000)
+    }, 15200)
             }
 }
+
+
 
 //inserted code end
 
         // resize handler updates width, height and offset of player after resize/init
         var resize = function() {
-            var width = $(window).width(),
+            var width = $('#pg-player').width(),
                 pWidth, // player width, to be defined
-                height = $(window).height(),
+                height = $('#pg-player').height(),
                 pHeight, // player height, tbd
                 $tubularPlayer = $('#pg-player');
 
@@ -189,10 +209,11 @@ setTimeout(function(){
     }
  
         if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
-                            var tag = document.createElement('script');
-                            tag.src = "https://www.youtube.com/iframe_api";
-                            var firstScriptTag = document.getElementsByTagName('script')[0];
-                            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                            
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
                     } 
 
     $.fn.tubular = function (options) {
@@ -203,6 +224,8 @@ setTimeout(function(){
             }
         });
     }
+
+
  
 
 })(jQuery, window);

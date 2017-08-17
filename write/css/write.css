@@ -1,0 +1,64 @@
+p > a, li > a {
+	color: #E4375A;
+}
+p > a:hover {
+	color: #21B673;
+}
+header {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+} 
+h2 {text-align: left;}
+h5 {float: right;}
+li {margin-top: 3px;}
+.title {
+    top: 120px;
+    position: absolute;
+    left: 50%;
+    color: #E4375A;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+.title + article {
+	position: absolute;
+	top: 250px;
+    width: 66%;
+    left: 17%;
+    font-size: 16px;
+    word-spacing: 1px;
+    word-break: break-word;
+}
+.bold {
+    font-weight: bold;
+}
+@media only screen and (max-width: 800px) {
+.title {
+	font-size: 1.5em;
+}
+.title + article {
+	width: 84%;
+    left: 7%;
+}
+}
+@media only screen and (max-width: 480px) {
+.title + article {
+	width: 90%;
+    left: 5%;
+}
+article > h5 { 
+    width: 80%;
+    float: left;
+}
+}
+.subterms {
+	list-style-type: lower-roman;
+}
+.privacy {
+	color: #21B673;
+	font-weight: bold;
+}

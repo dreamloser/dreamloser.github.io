@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,  minimum-scale=1, user-scalable=no">
+	<meta name="author" content="Plot Guru, Inc">
+	<meta name="keywords" content="demo, sample, play, plotguru, plotguruterms, netflix, plotguruapp, youtube, App, Questions, Predictions">
+	<meta name="description" content="Sample Demo of Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
+	<meta property="og:image" content="../assets/icon3.png">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://wwww.plotguru.com/">
+	<meta property="og:title" content="Demo - Plot Guru">
+	<meta property="og:site_name" content="Plot Guru, Inc">
+	<meta property="og:description" content="Demo of Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@plotguru" />
+	<meta name="twitter:title" content="Demo of Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?" />
+	<meta name="twitter:description" content="Demo of Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?" />
+	<meta name="twitter:image" content="../assets/icon3.png" />
+	<script type="text/javascript"> 
+            if (screen.width <= 1024) {
+                window.location.href = "http://www.plotguru.com";
+            } 
+    </script>
+	<title>Play Demo - Plot Guru</title> 
+	<link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico"/>
+	<link rel="stylesheet" href="../css/normalize.css">  
+	<link rel="stylesheet" href="../css/animate.css">     
+	<link rel="stylesheet" href="../css/main.css">   
+	<link rel="stylesheet" href="css/demo.css">  
+</head>
+<body>  
+   <div id="player"></div>
+   <div class="demo_pre"><img class="demo_img" alt="demo" src="../assets/iphone_demo.png">
+   <h1 class="wp">Hey, you! Want to try a sample round of Plot Guru?</h1>
+   <h4 class="tm">Press play, then try and click the correct answer!</h4>
+   <img class="demo_play tubular-play" src="../assets/icon_play.png">
+   </div>
+   <h3 class="demo_skip"><a href="http://www.plotguru.com">SKIP DEMO</a></h3>
+                <div class="mask2"></div>  
+				<div class="play">
+					<div class="qframe"> 
+					<img src="../assets/iphone.png">
+					</div>
+					<div class="clock" id="clock"></div>
+					<div class="promo"> 
+						<div class="question">
+							<p>Quick! What’s Dwight gonna do the CPR dummy?</p>
+						</div>
+						<nav>
+							<a class="btn" id="mouth">Mouth-to-mouth</a>			
+							<a class="btn" id="correct">Cut off its face</a>			
+							<a class="btn" id="steal">Steal its shirt</a>
+							<a class="btn" id="fire">​Set it on fire</a>
+						</nav>
+					</div>
+				</div>
+		<section class="ltIE9">Please update your browser<br>to enjoy Plot Guru.</section>
+   <script src="../js/jquery-1.10.1.min.js"></script> 
+	<script src="../js/pro.js"></script> 
+	<script>
+$(function(){  
+			$.getScript("js/jquery.tubular.edited.js", function() {
+			$('#player').tubular({start: 123});
+}); 
+	$('.demo_play').click(function(){
+        $('.demo_pre').addClass('slideOutUp animated'); 
+});
+})
+	</script>
+	<script async>
+		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+			  ga('create', 'UA-38451886-3', 'auto');
+			  ga('send', 'pageview', location.pathname);
+    </script>
+</body>
+</html>

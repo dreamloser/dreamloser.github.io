@@ -1,0 +1,67 @@
+p > a {
+	color: #E4375A;
+}
+p > a:hover {
+	color: #21B673;
+}
+header {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+} 
+form {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;  
+    flex-flow: column;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
+}
+h2 {text-align: left;}
+h5 {float: right;}
+li {margin-top: 3px;}
+.title {
+    top: 120px;
+    position: absolute;
+    left: 50%;
+    color: #E4375A;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+.title + form {
+    position: absolute;
+    top: 230px;
+    width: 350px;
+    left: 50%;
+    font-size: 16px;
+    word-spacing: 1px;
+    word-break: break-word;
+    line-height: 2em;
+    margin-left: -245px;
+} 
+input.button {
+    width: 120px;
+    background-color: #21B673;
+    color: #fff;
+    border-radius: 4px;
+    left: 50%;
+    position: absolute;
+}
+fieldset {
+    border: none;
+}
+.password-input {
+    float: right;
+} 
+@media only screen and (max-width: 800px) { 
+form { 
+    margin-top: -20px;
+}
+label {
+    position: relative;
+    margin-left: 150px;
+}

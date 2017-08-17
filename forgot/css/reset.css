@@ -1,0 +1,98 @@
+body  {
+    overflow: hidden;
+}
+p > a {
+	color: #E4375A;
+}
+p > a:hover {
+	color: #21B673;
+}
+header {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+} 
+form[name="forgot"] {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+}
+h2 {text-align: left;}
+h5 {float: right;}
+li {margin-top: 3px;}
+.title {
+    top: 120px;
+    position: absolute;
+    left: 50%;
+    color: #E4375A;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+.title + article {
+	position: absolute;
+	top: 230px;
+    width: 70%;
+    left: 15%;
+    font-size: 16px;
+    word-spacing: 1px;
+    word-break: break-word;
+} 
+.forgot {
+    width: 495px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+input.email {
+    border: 2px solid #1dc479;
+    box-shadow: 0 0 0 0 #1dc479;
+    color: #1dc479;
+}
+input.email:active {
+    border: 2px solid #1dc479;
+}
+form {
+    width: 430px; 
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+#submit {
+    box-shadow: 0 0 0 2px #1dc479;
+}
+@media only screen and (max-width: 800px) {
+.title {
+	font-size: 1.5em;
+}
+.title + article {
+	width: 84%;
+    left: 7%;
+}
+.forgot {
+    width: 430px;
+}
+}
+@media only screen and (max-width: 480px) {
+.title + article {
+	width: 90%;
+    left: 5%;
+    margin-top: -30px;
+}
+article > h5 { 
+    width: 80%;
+    float: left;
+}
+#form1 {
+    margin-top: 30px;
+    width: 80%;
+}
+.forgot {
+    width: 80%;
+    left: 0%;
+    word-break: break-all;
+}
+}

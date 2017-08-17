@@ -1,83 +1,199 @@
 <!DOCTYPE HTML>
-<html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,  minimum-scale=1, user-scalable=no">
 	<meta name="author" content="Plot Guru, Inc">
 	<meta name="keywords" content="plotguru, netflix, plotguruapp, youtube, App, Questions, Predictions">
-	<title>Plot Guru | Make real time predictions while watching Netflix</title>
+	<meta name="description" content="Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
+	<meta property="og:image" content="http://www.plotguru.com/assets/icon3.png">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://wwww.plotguru.com/">
+	<meta property="og:title" content="Plot Guru App">
+	<meta property="og:site_name" content="Plot Guru, Inc">
+	<meta property="og:description" content="Watch Netflix. Answer real-time trivia. Are you the Plot Guru? Go to http://www.plotguru.com and sign up to get it for free!" >
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@plotguru" />
+	<meta name="twitter:title" content="Make real time predictions while watching Netflix" />
+	<meta name="twitter:description" content="Watch Netflix. Answer real-time trivia. Are you the Plot Guru? Coming to iOS soon. Go to http://www.plotguru.com and sign up to get it for free!" />
+	<meta name="twitter:image" content="http://www.plotguru.com/assets/icon3.png" />
+	<title>Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?</title> 
+	<link rel="shortcut icon" type="image/ico" href="assets/favicon.ico"/>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/animate.css">  
 	<link rel="stylesheet" href="css/main.css"> 
-	<script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/modernizr.js"></script>  
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/marquee.js"></script>
 </head>
 	<body>
-	    <div id="player"></div>
-	<!--    <div class="container">
-	    	<div class="twelve columns">
-	     		<div class="navbar">
-			     		<nav>
-			     		     <a class="navs" href="http://kyoto.life/pg">Home</a>
-			     		     <a class="navs" href="http://plot.guru/blog.html">Blog</a>
-			     		     <a class="navs" href="http://plot.guru/press.html">Press</a>
-			     		     <a class="navs" href="http://plot.guru/about.html">About</a>
-			     		     <a class="navs" href="http://plot.guru/contact.html">Contact</a>
-			     		</nav>
-	     		</div>
-     		</div>
-	    </div>  -->
-	    <div class="tex">
-	    	<p>Nice!</p>
-	    	<p>We have just the<br> thing for you.</p>
-	    </div>
-	    <div class="play">
-	        <div class="qframe"> 
-	        </div>
-	        <div class="clock" id="clock"></div>
-	    <div class="promo">
-	        <div class="question">
-	        	<p>Quick! What did Michael get for Secret Santa?</p>
-	        </div>
-	    	<nav>
-			<a class="btn">An iPod</a>			
-			<a class="btn">A hat</a>			
-			<a class="btn" id="correct">A mitten</a>
-			<a class="btn">A cup</a>
-		    </nav>
-	    </div>
-	  </div>
-	  <div class="logoContainer">
-			  <div class="flex logo">
-			    	<img src="icon2.png" /> 
-			  </div>
-			  <div class="flex brand">
-			    	<img width="192" src="plot_guru_official_wordmark_white.png" /> 
-			  </div>
-	    <div class="flex des"><p>Make predictions in real time while watching Netflix!</p></div>
-        <div class='flex subs'>
-            <p>Join Our Early Sign-Up list to get the app for free!</p>
-            <form action="//plotguru.us10.list-manage.com/subscribe/post?u=767096bf5a3acafa6124884f6&amp;id=75ed4171af" method="post" name="mc-embedded-subscribe-form0" target="_blank"> 
-			<input id="email" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-			<input class="btns" id="submit" type="submit" name="subscribe" value="Join List Now"></form>
+	    <header class="container">
+	        <a href="http://www.plotguru.com" class="nav_logo"></a> 
+	     		<nav class="navbar"> 			
+                                                     <a class="navs links" href="#">BLOG</a>
+                                                     <a class="navs links" href="#">PRESS</a>
+                                                     <a class="navs links" href="#">TERMS</a>
+                                                     <a class="navs links" href="#">ABOUT</a>
+                                                     <a class="navs links" href="#">CONTACT</a>
+				<a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
+			     		     <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
+			     		     <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
+			     		     <button id="menu" class="navs" href="#"></button>
+	     		</nav> 
+	    </header> 
+<section class="content2">    
+       <div class="mockup2">
+       	 <img alt="screenshot" src="./assets/screen_1.jpg" />
+       </div>
+       <div class="slogan">
+       	   <img width="120" alt="logo" src="./assets/logo_icon_guru.png" />
+       	   <img width="240" alt="wordmark" src="./assets/plot_guru_official_wordmark_white.png" />
+       	   <h1 class="slogan_text">Answer real-time trivia<br>while watching Netflix.</h1>
+       	   <a id="download" href="https://itunes.apple.com/app/id964629606"><img width="240" alt="download" src="./assets/img_button_appstore.png" /></a>
+       </div>
+</section>	   
+	    <section class="mask2"></section> 
+		<section class="downbar2"></section>   
+<div class="wrapper">	      
+<section class="content">  
+  <div class="marquee">
+			<div class="marquee_data">
+				<div class="marquee_panel" data-image="assets/images/phone_1">
+				<h3>Gather your friends</h3>
+				<p>And find a couch! If you have no friends, we made a single-player mode just for you.</p>
+				<a class="cta" id="www">Play Demo</a>
+				</div>
+				<div class="marquee_panel" data-image="assets/images/phone_2">
+				<h3>Select a show</h3>
+				<p>We're launching with over 20 of the most popular titles on Netflix right now.</p>
+				<a class="cta">Play Demo</a>
+			    </div>
+		    	<div class="marquee_panel" data-image="assets/images/phone_3">
+				<h3>Answer questions</h3>
+				<p>The app syncs up with the show you're watching, sending out questions while the episode is playing. Make your best predictions!</p> 
+				<a class="cta">Play Demo</a>
+				</div>
+				<div class="marquee_panel" data-image="assets/images/phone_4">
+				<h3>Receive trivia</h3>
+				<p>In addition to receiving questions, you'll also get occasional pieces of trivia that relate to what's happening on-screen.</p> 
+				<a class="cta">Play Demo</a>
+				</div>
+				<div class="marquee_panel" data-image="assets/images/phone_5">
+				<h3>See the results</h3>
+				<p>Players are ranked at the end of every episode. Earn points & badges, share the results, and shame your friends!</p> 
+				<a class="cta">Play Demo</a>
+			</div>
+			</div>
 		</div>
-    </div> 
-	    <div class="mask"></div>
-	  <!--  <div class="promovideo">
-	    	<video autoplay="true" loop="true" preload="auto" muted>
-	    		<source src="3.mp4" type="video/mp4">
-	    	</video>
-	    </div>  -->
-		<div class="downBar"></div>
-		<img hidden id="skip" src="icon_skip.png" />
-	</body> 
-<script src="js/pro.js"></script>
-<script src="js/jquery.tubular.edited.js"> </script>
-<script>
+</section>
+	    <section class="mask"></section> 
+		<section class="downBar"> 
+			<img src="assets/icon_downarrow.png" class="triangle" />
+		</section>
+		<aside class="whitespace"></aside>
+		<artical id="wide" class="wide">
+		  <aside class="connect"></aside> 
+		   <section class="row"> 
+			<div class="intros">  
+				<div class="mask2"> 
+				</div>
+				<div class="play">
+					<div class="qframe"> 
+					<img src="assets/iphone.png">
+					</div>
+					<div class="clock" id="clock"></div>
+					<div class="promo"> 
+						<div class="question">
+							<p>Quick! What’s Dwight gonna do the CPR dummy?</p>
+						</div>
+						<nav>
+							<a class="btn" id="mouth">Mouth-to-mouth</a>			
+							<a class="btn" id="correct">Cut off its face</a>			
+							<a class="btn" id="steal">Steal its shirt</a>
+							<a class="btn" id="fire">​Set it on fire</a>
+						</nav>
+					</div>
+				</div>
+			    <button id="playDemo">Play a sample round</button>
+			    <p>Press play, then try and click the correct answer.</p>
+			</div>
+			<div class="stone">
+				<div class="stone2"></div>
+			</div>
+			<div class="intros introShow"> 
+			    <div class="mockup1">  
+				</div>
+				<div class="intro_text">
+					<h2>Featured</h2> 
+				</div>
+				<div class="featured">
+					<a href="http://www.businessinsider.com/netflix-plot-guru-app-for-predicting-plot-twists-on-tv-2015-8" target="_blank"><img alt="BI" src="./assets/award_bi.png"></a>
+					<a href="https://www.producthunt.com/tech/plot-guru" target="_blank"><img alt="Product Hunt" src="./assets/award_phunt.png"></a>
+					<a href="http://www.popsci.com/plot-guru-is-trivia-app-that-wants-to-become-your-ultimate-netflix-sidekick" target="_blank"><img alt="Popsci" src="./assets/award_popsci.png"></a>
+					<a href="http://www.thedrum.com/news/2015/09/09/make-predictions-while-watching-netflix-plot-guru" target="_blank"><img alt="The Drum" src="./assets/award_thedrum.png"></a>
+					<br>
+					<a href="https://www.mccombs.utexas.edu/Centers/Texas-Venture-Labs/TVL-Scholarship" target="_blank"><img alt="Texas Venture Labs" src="./assets/award_tvl.png"></a>
+					<a href="https://founder.org/company/plotguru" target="_blank"><img alt="Founder" src="./assets/award_founder.png"></a>
+					<a href="http://www.softlayer.com/catalyst" target="_blank"><img alt="IBM" src="./assets/award_ibm.png"></a>
+					<a href="http://www.builtinaustin.com/2015/11/02/plot-guru-pits-you-against-your-friends-streaming-tv-trivia" target="_blank"><img alt="Built in Austin" src="./assets/award_built.png"></a>
+					<br>
+					<a href="http://thebridge.jp/2015/08/plot-guru" target="_blank"><img alt="Bridge" src="./assets/award_bridge.png"></a>
+					<a href="http://www.iculture.nl/apps/review-plot-guru-netflix-quiz/" target="_blank"><img alt="iCulture" src="./assets/award_iculture.png"></a>
+					<a href="http://austin.3daystartup.org/" target="_blank"><img alt="3DS" src="./assets/award_3ds.png"></a>
+					<a href="http://exstreamist.com/binge-watching-with-friends-plot-guru-is-the-game-you-need/" target="_blank"><img alt="Extremist" src="./assets/award_extreme.png"></a>
+				</div>
+			</div>  
+			<div class="intros guru_icon"></div>
+		  </section>	
+		</artical>
+		<section class="ltIE9">Please update your browser<br>to enjoy Plot Guru.</section>
+		<footer class="join">
+		<a id="download" href="https://itunes.apple.com/app/id964629606"><img width="240" alt="download2" src="./assets/img_button_appstore.png"></a>
+			<p>Android User?</p>
+			<div class="blur_bottom">
+            <div class='flex subs'>
+            <p id="bp">Join our early sign up list to be notified when the Android version is ready.</p>
+            <form action="//plotguru.us10.list-manage.com/subscribe/post?u=767096bf5a3acafa6124884f6&amp;id=1b64f4d2b1" method="post" name="presignup2" target="_blank"> 
+			<input id="email2" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			<input class="btns" id="submit2" type="submit" name="subscribe" value="Join List"></form>
+		    </div>
+		    </div> 
+		</footer>
+        <div class="stt"></div> 
+</div>        
+    <script async>
+		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+			  ga('create', 'UA-38451886-3', 'auto');
+			  ga('send', 'pageview');
+    </script>  
+	<script src="js/pro.js"></script> 
+	<script src="js/script.js"></script>    
+	<script type="text/javascript">
+	$(function() { 
+			$('body').on('click', '#playDemo', function() {
+			  ga('send', 'event', 'button', 'playDemo', 'Played_Demo');
+			});
+			$('body').on('click', '#submit', function() {
+			  ga('send', 'event', 'button', 'subscribe', 'Subscribe_via_header');
+			});
+			$('body').on('click', '#submit2', function() {
+			  ga('send', 'event', 'button', 'subscribe', 'Subscribe_via_footer');
+			});
+			var n = 1;
+		setInterval(function() {
+			n += 1;
+			$('.mockup2>img').fadeOut(500); 
+			setTimeout(function() {
+			$('.mockup2>img').fadeIn(500).attr('src', './assets/screen_' + n + '.jpg') 
+			}, 500);
+			if (n >= 6) {n = 1};
+		}, 7700);
+
+	});
 </script>
-<script src="js/script.js"></script>
-
-
-
-
+</body>
 </html>

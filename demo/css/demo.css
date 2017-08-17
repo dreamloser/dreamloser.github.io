@@ -1,0 +1,92 @@
+body {
+    overflow: hidden; 
+}
+.demo_pre {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #e53659;
+    z-index: 99;
+}
+.demo_img {
+    width: 430px;
+    position: absolute;
+    top: -270px;
+    left: 50%;
+    margin-left: -245px;
+}
+h1, h3, h4 {
+    color: #fff;
+}
+#pg-player {
+    width: 100%;
+    height: 100%;
+}
+.play {
+    top: 0;
+}
+.wp {
+    top: 40%;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.mask2 {
+    visibility: visible;
+    border-radius: 0;
+}
+.tm {
+    top: 50%;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    display: table;
+    font-weight: normal;
+    text-align: center;
+}
+.demo_play {
+    width: 100px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -50px;
+    cursor: pointer;
+}
+.progressbar-text {
+    visibility: hidden;
+}
+.demo_play:hover {
+    opacity: .7;
+}
+.demo_skip {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-weight: normal;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 100;
+}
+@media only screen and (max-width: 1024px) {
+.wp {
+    font-size: 30px;
+}
+}
+
+@media screen and (orientation:portrait) { 
+.wp {
+    font-size: 1em;
+}
+.tm {
+    font-size: 16px;
+}
+.qframe {
+    visibility: hidden;
+}
+}
