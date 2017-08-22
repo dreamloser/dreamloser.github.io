@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,  minimum-scale=1, user-scalable=no">
 	<meta name="author" content="Plot Guru, Inc">
 	<meta name="keywords" content="plotguru, netflix, plotguruapp, youtube, App, Questions, Predictions">
-	<meta name="description" content="Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
+	<meta name="description" content="Watch Netflix. Answer real-time trivia. Are you the Plot Guru? Download the app on AppStore for free.">
 	<meta property="og:image" content="http://www.plotguru.com/assets/icon3.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://wwww.plotguru.com/">
@@ -23,25 +23,28 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/animate.css">  
 	<link rel="stylesheet" href="css/main.css"> 
-    <script src="js/modernizr.js"></script>  
-    <script src="js/jquery-1.10.1.min.js"></script>
-    <script src="js/marquee.js"></script>
+	<script type="text/javascript">
+if (window.screen.width < 700) { 
+   window.location = 'http://www.plotguru.com/mobile';  
+ }
+	</script>
 </head>
 	<body>
-	    <header class="container">
-	        <a href="http://www.plotguru.com" class="nav_logo"></a> 
-	     		<nav class="navbar"> 			
-                                                     <a class="navs links" href="#">BLOG</a>
-                                                     <a class="navs links" href="#">PRESS</a>
-                                                     <a class="navs links" href="#">TERMS</a>
-                                                     <a class="navs links" href="#">ABOUT</a>
-                                                     <a class="navs links" href="#">CONTACT</a>
-				<a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
-			     		     <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
-			     		     <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
-			     		     <button id="menu" class="navs" href="#"></button>
-	     		</nav> 
-	    </header> 
+        <header class="container">
+            <a href="http://www.plotguru.com" class="nav_logo"></a> 
+             <input style="display:none;position:absolute;" class="menu-btn" type="checkbox" id="menu-btn">
+                <nav class="navbar"> 
+                                 <a class="navs links" href="http://www.plotguru.com/content">Content</a>
+                                 <a class="navs links" href="http://www.plotguru.com/blog">Blog</a>
+                                 <a class="navs links" href="http://www.plotguru.com/press">Press</a>
+                                 <a class="navs links" href="http://www.plotguru.com/about">About</a>
+                                 <a class="navs links" href="http://www.plotguru.com/contact">Contact</a>
+                             <a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
+                             <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
+                             <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
+                             <label id="menu" class="navs" href="#" for="menu-btn"></label>
+                </nav> 
+        </header> 
 <section class="content2">    
        <div class="mockup2">
        	 <img alt="screenshot" src="./assets/screen_1.jpg" />
@@ -52,9 +55,10 @@
        	   <h1 class="slogan_text">Answer real-time trivia<br>while watching Netflix.</h1>
        	   <a id="download" href="https://itunes.apple.com/app/id964629606"><img width="240" alt="download" src="./assets/img_button_appstore.png" /></a>
        </div>
-</section>	   
-	    <section class="mask2"></section> 
-		<section class="downbar2"></section>   
+</section>	    
+		<section class="downbar2"> 
+		<img alt="down_arrow" src="./assets/icon_downarrow.png">  
+		</section>   
 <div class="wrapper">	      
 <section class="content">  
   <div class="marquee">
@@ -127,6 +131,9 @@
 				<div class="intro_text">
 					<h2>Featured</h2> 
 				</div>
+				<div class="builtinaustin">
+					<a href="http://www.builtinaustin.com/2016/01/25/50-austin-startups-watch-2016" target="_blank"><img alt="top_startup" src="assets/built_in_austin_top_50_badge.png" /></a>
+				</div>
 				<div class="featured">
 					<a href="http://www.businessinsider.com/netflix-plot-guru-app-for-predicting-plot-twists-on-tv-2015-8" target="_blank"><img alt="BI" src="./assets/award_bi.png"></a>
 					<a href="https://www.producthunt.com/tech/plot-guru" target="_blank"><img alt="Product Hunt" src="./assets/award_phunt.png"></a>
@@ -162,6 +169,9 @@
 		</footer>
         <div class="stt"></div> 
 </div>        
+    <script src="js/modernizr.js"></script>  
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/marquee.js"></script>
     <script async>
 		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

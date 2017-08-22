@@ -1,3 +1,8 @@
+
+html {overflow-x: hidden; height: 100%}     
+body { height: 100%; width: 100%; position: absolute; padding: 0px; font-family: 'Raleway', ralewaymedium, sans-serif; font-weight: 100; font-size: 18px; background-color: #fff; }
+
+
 p > a {
 	color: #E4375A;
 }
@@ -5,10 +10,23 @@ p > a:hover {
 	color: #21B673;
 }
 header {
-    display: block;
-    visibility: visible;
+    height: 3.5em;
+    background-color: #e2284e;
+    width: 100%; 
+    z-index: 151;
+    position: fixed;
+    top: 0;
     opacity: 1;
-} 
+}  
+#menu {
+    display: none;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    border-style: none;
+}
 h2 {text-align: left;}
 h5 {float: right;}
 li {margin-top: 3px;}
@@ -33,7 +51,8 @@ li {margin-top: 3px;}
     word-spacing: 1px;
     word-break: break-word;
 }
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 840px) {
 .title {
 	font-size: 1.5em;
 }
@@ -42,20 +61,196 @@ li {margin-top: 3px;}
     left: 7%;
 }
 }
-@media only screen and (max-width: 480px) {
-.title + article {
-	width: 90%;
-    left: 5%;
-}
-article > h5 { 
-    width: 80%;
-    float: left;
-}
-}
 .subterms {
 	list-style-type: lower-roman;
 }
 .privacy {
 	color: #21B673;
 	font-weight: bold;
+}
+/* responsive */  
+@media only screen and (max-width: 840px) {
+#menu-btn ~ .links {
+    visibility: hidden;
+    font-weight: bold;
+}
+#twitter, #fb, #ins { 
+    visibility: visible;
+}
+#twitter {
+    right: 150px;
+}
+#fb {
+    right: 100px;
+}
+#ins {
+    right: 50px;
+}
+.disclaimer:before { 
+    margin-left: 126px;
+    visibility: hidden;
+}
+.navs:not(#menu):hover { 
+    opacity: 1;
+} 
+.navbar {
+    right: 10px;
+}
+.stt { 
+    opacity: .7;
+}
+#menu { 
+    background: url(../../home/assets/menu.png) center center no-repeat;
+    background-size: contain; 
+    position: absolute;
+    background-repeat: no-repeat;  
+    display: block;  
+    visibility: visible;
+}
+.navbar {
+    height: 100%;
+    transition: height .4s ease-out;
+    -webkit-transition: height .4s ease-out;
+}
+#menu-btn:checked + .navbar {
+    height: 500px;
+    transition: height .4s ease-out;
+    -webkit-transition: height .4s ease-out;
+}
+#menu-btn:checked ~ .links {
+    visibility: visible;
+}
+.navs:first-child {
+    position: absolute;
+    right: -10px;
+    top: 72px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(2) {
+    position: absolute;
+    right: -10px;
+    top: 115px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(3) {
+    position: absolute;
+    right: -10px;
+    top: 157px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(4) {
+    position: absolute;
+    right: -10px;
+    top: 199px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(5) {
+    position: absolute;
+    right: -10px;
+    top: 241px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+}
+@media only screen and (max-width: 700px) {
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: auto;
+    padding: 5px 5px 1px;
+}
+.title + article {
+    width: 84%;
+    left: 8%;
+}
+.navs {
+    color: #fff;
+}
+.navs:not(#menu) {
+    margin-right: 15px;
+}
+.navbar {
+    top: 0px;
+}
+header {
+    height: 3.55em;
+    width: 100%;
+    z-index: 101;
+    position: absolute;
+    bottom: 7px;
+} 
+    li {
+        list-style: inherit;
+    }
+}
+@media only screen and (max-width: 480px) {
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.title {
+    width: 100vw;
+    left: 50vw;
+}
+.title + article {
+    width: 320px; /*fallback*/
+    width: 90vw;
+    left: 8%;
+}
+article > h5 { 
+    width: 80%;
+    float: left;
+}
+header {
+    height: 3.5em;
+    background-color: #e2284e;
+    width: 100%;
+    width: 100vw; 
+    z-index: 151;
+    position: fixed;
+    top: 0;
+    left: 0;
+} 
+.nav_logo {
+    background: url(../../home/assets/logo_icon_guru.png) no-repeat, url(../../home/assets/plot_guru_official_wordmark_white.png) no-repeat;
+    height: 3em;
+    position: absolute;
+    z-index: 100;
+    left: 8px;
+    top: 8px;
+    width: 230px;
+    background-size: 120px, 140px;
+    background-position: -20px -1px, 90% 50%;
+}
+.navbar {
+    position: absolute;
+    right: 0px;
+    margin-left: 12px;
+    overflow: hidden;
+    font-weight: normal;
+    line-height: 4em;
+    width: 540px;
+    font-family: ralewaymedium, raleway;
+    height: 100%; 
+}
+#twitter, #fb, #ins {
+    visibility: hidden;
+}
 }

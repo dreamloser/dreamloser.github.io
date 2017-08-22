@@ -21,24 +21,25 @@
 	<title>Privacy Policy - Plot Guru</title> 
 	<link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico"/>
 	<link rel="stylesheet" href="../css/normalize.css">  
-	<link rel="stylesheet" href="../css/main.css">   
+	<link rel="stylesheet" href="../press/css/main.css">   
 	<link rel="stylesheet" href="css/privacy.css">  
 </head>
 <body>
         <header class="container">
-	        <a href="http://www.plotguru.com" class="nav_logo"></a> 
-	     		<nav class="navbar">  
-			     		     <a class="navs links" href="http://www.plotguru.com/blog.html">BLOG</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/press.html">PRESS</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/terms">TERMS</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/about.html">ABOUT</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/contact.html">CONTACT</a>
-			     		     <a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
-			     		     <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
-			     		     <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
-			     		     <button id="menu" class="navs" href="#"></button>
-	     		</nav> 
-	    </header>
+            <a href="http://www.plotguru.com" class="nav_logo"></a> 
+             <input style="display:none;position:absolute;" class="menu-btn" type="checkbox" id="menu-btn">
+                <nav class="navbar"> 
+                                 <a class="navs links" href="http://www.plotguru.com/blog">Blog</a>
+                                 <a class="navs links" href="http://www.plotguru.com/press">Press</a>
+                                 <a class="navs links" href="http://www.plotguru.com/terms">Terms</a>
+                                 <a class="navs links" href="http://www.plotguru.com/about">About</a>
+                                 <a class="navs links" href="http://www.plotguru.com/contact">Contact</a>
+                             <a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
+                             <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
+                             <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
+                             <label id="menu" class="navs" href="#" for="menu-btn"></label>
+                </nav> 
+        </header>
 	    <h1 class="title">Privacy Policy</h1>
 	    <article>
 	    <p>This Privacy Policy governs the manner in which Plot Guru collects, uses, maintains and discloses information collected from users (each, a “user”) on the Plot Guru Application (“app”) and the plotguru.com website (“site”). This privacy policy applies to the application, site and all products and services offered by Plot Guru, Inc.</p>   
@@ -99,16 +100,7 @@ $('.stt').click(function(){
 	$('html, body').animate({
     scrollTop: 0
 }, 1000);
-})  
-$("#menu").click(function(){  
-  if ( $('.links').css('visibility') == 'hidden' ) {
-    $('.navbar').css('height', '500px');
-    $('.links').css('visibility','visible');
-  } else {
-    $('.links').css('visibility','hidden');
-    $('.navbar').css('height', '100%');
-}
-});
+})   
 })
 	</script>
 	<script async>

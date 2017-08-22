@@ -7,7 +7,7 @@ var marqueeVars = {
 		totalPanels: 0,
 		timePassed: 0,
 		timeToChange: 60,
-		duration: 1250,
+		duration: 2000,
 		inTransition: false,
 		panelContent: Array
 };
@@ -36,8 +36,7 @@ $(document).ready(function(){
 
 function marqueeGatherData() {
 	$('.marquee_data .marquee_panel').each(function(index){
-         marqueeVars.totalPanels = index + 1;
-         console.log(marqueeVars.totalPanels);
+         marqueeVars.totalPanels = index + 1; 
     var panel_image_l = $(this).attr('data-image')+'_l.png';
 	var panel_image_s = $(this).attr('data-image')+'_s.png';
 	var panel_caption = $(this).html();

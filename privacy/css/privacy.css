@@ -5,10 +5,14 @@ p > a:hover {
 	color: #21B673;
 }
 header {
-    display: block;
-    visibility: visible;
+    height: 3.5em;
+    background-color: #e2284e;
+    width: 100%; 
+    z-index: 151;
+    position: fixed;
+    top: 0;
     opacity: 1;
-} 
+}  
 h2 {text-align: left;}
 h5 {float: right;}
 li {margin-top: 3px;}
@@ -33,19 +37,40 @@ li {margin-top: 3px;}
     word-spacing: 1px;
     word-break: break-word;
 }
-@media only screen and (max-width: 800px) {
-.title {
-	font-size: 1.5em;
+@media only screen and (max-width: 700px) {
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: auto;
+    padding: 5px 5px 1px;
 }
 .title + article {
-	width: 84%;
-    left: 7%;
+    width: 84%;
+    left: 8%;
 }
+header {
+    height: 3.55em;
+    width: 100%;
+    z-index: 101;
+    position: fixed;
+    bottom: 7px;
+}
+    body {
+        overflow:  visible;
+        font-family: 'Raleway', ralewaymedium, sans-serif;
+    }
+    li {
+        list-style: inherit;
+    }
 }
 @media only screen and (max-width: 480px) {
+.title {
+    width: 100vw;
+    left: 50vw;
+    font-size: 2em;
+}
 .title + article {
-	width: 90%;
-    left: 5%;
+    width: 320px; /*fallback*/
+    width: 90vw;
+    left: 3%;
 }
 article > h5 { 
     width: 80%;

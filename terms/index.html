@@ -21,24 +21,25 @@
 	<title>Terms and Conditions - Plot Guru</title> 
 	<link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico"/>
 	<link rel="stylesheet" href="../css/normalize.css"> 
-	<link rel="stylesheet" href="../css/main.css">   
+	<link rel="stylesheet" href="../press/css/main.css">   
 	<link rel="stylesheet" href="css/terms.css">  
 </head>
 <body>
         <header class="container">
-	        <a href="http://www.plotguru.com" class="nav_logo"></a> 
-	     		<nav class="navbar">  
-			     		     <a class="navs links" href="http://www.plotguru.com/blog.html">BLOG</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/press.html">PRESS</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/terms">TERMS</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/about.html">ABOUT</a>
-			     		     <a class="navs links" href="http://www.plotguru.com/contact.html">CONTACT</a>
-			     		     <a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
-			     		     <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
-			     		     <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
-			     		     <button id="menu" class="navs" href="#"></button>
-	     		</nav> 
-	    </header>
+            <a href="http://www.plotguru.com" class="nav_logo"></a> 
+             <input style="display:none;position:absolute;" class="menu-btn" type="checkbox" id="menu-btn">
+                <nav class="navbar"> 
+                                 <a class="navs links" href="http://www.plotguru.com/blog">Blog</a>
+                                 <a class="navs links" href="http://www.plotguru.com/press">Press</a>
+                                 <a class="navs links" href="http://www.plotguru.com/terms">Terms</a>
+                                 <a class="navs links" href="http://www.plotguru.com/about">About</a>
+                                 <a class="navs links" href="http://www.plotguru.com/contact">Contact</a>
+                             <a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
+                             <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
+                             <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
+                             <label id="menu" class="navs" href="#" for="menu-btn"></label>
+                </nav> 
+        </header>    
 	    <h1 class="title">Terms of Service</h1>
 	    <article>
 	    <p>This following represents a legal document that serves as our Terms of Service and it governs the legal terms of our mobile application, Plot Guru, our website, <a href="https://www.plotguru.com">https://www.plotguru.com</a>, <a href="https://plot.guru">https://plot.guru</a> and all other sub-domains, and any associated web-based and mobile applications (collectively, “application”), as owned and operated by Plot Guru, Inc.. Capitalized terms, unless otherwise defined, have the meaning specified within the definitions section below. This Terms of Service, along with our <a href="http://www.plotguru.com/privacy">Privacy Policy</a>, any mobile license agreement, and other posted guidelines within our application, collectively “Legal Terms”, constitute the entire and only agreement between users and Plot Guru Inc., and supersede all other agreements, representations, warranties and understandings with respect to our application and the subject matter contained herein. We may amend our Legal Terms at any time without specific notice to the users. The latest copies of our Legal Terms will be posted in our application, and you should review all Legal Terms prior to using our application. After any revisions to our Legal Terms are posted, users agree to be bound to any such changes to them. Therefore, it is important for the user to periodically review our Legal Terms to make sure they still agree to them.</p> 
@@ -116,16 +117,7 @@ $('.stt').click(function(){
 	$('html, body').animate({
     scrollTop: 0
 }, 1000);
-})  
-$("#menu").click(function(){  
-  if ( $('.links').css('visibility') == 'hidden' ) {
-    $('.navbar').css('height', '500px');
-    $('.links').css('visibility','visible');
-  } else {
-    $('.links').css('visibility','hidden');
-    $('.navbar').css('height', '100%');
-}
-});
+})   
 })
 	</script>
 	<script async>

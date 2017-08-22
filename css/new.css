@@ -79,7 +79,11 @@ a.btn {
 .no-boxshadow .content, .no-boxshadow .wide, .no-boxshadow .join, .no-boxshadow .downBar, .no-boxshadow .connect, .no-boxshadow .row {
     display: none;
 }
-
+div.wrapper1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 header {
 	height: 2em; 
     width: 100%; 
@@ -90,7 +94,7 @@ header {
 header > nav > div {
     display: inline;
 } 
-.content2 { 
+.content { 
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;   
@@ -105,7 +109,7 @@ header > nav > div {
     height: 100%;
     background-color: #e53659;  
 } 
-.downbar2 {
+.downbar {
     position: absolute;
     bottom: 0;
     height: 104px;
@@ -121,7 +125,7 @@ header > nav > div {
     left: 10%;
     color: #fff;
  }
- .mockup2 {
+ .mockup {
     position: relative;
     background: url(../assets/image_iphone6.png) center center no-repeat; 
     width: 20em;
@@ -134,7 +138,7 @@ header > nav > div {
     margin: 0 0 8px -90px;
     background-position: bottom;
  }
- .mockup2 > img {
+ .mockup > img {
     width: 14.2em;
     height: 25.3em;
     position: absolute;  
@@ -176,7 +180,7 @@ header > nav > div {
     padding-right: 4px;
     margin-right: 4px;
  }
- .navbar2 {
+ .navbar {
     position: absolute;
     bottom: 5px;
     right: 15px;
@@ -187,7 +191,7 @@ header > nav > div {
     text-align: right; 
     font-family: AvenirHeavy, ralewaybold;
  }
- .navbar2 button {
+ .navbar button {
     border-style: none;
     border-radius: 5px;
     width: 170px;
@@ -402,7 +406,7 @@ header > nav > div {
     body {
         height: 200%;
     }
-    .content2 { 
+    .content { 
     flex-flow: column;
     -ms-flex-flow: column;
     -webkit-flex-flow: column;
@@ -422,7 +426,7 @@ header > nav > div {
     font-size: 18px;
     word-spacing: 0;
     }
-    .mockup2 { 
+    .mockup { 
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
@@ -448,7 +452,7 @@ header > nav > div {
     img[alt="wordmark"] { 
     width: 190px;
     }
-    .downbar2 {
+    .downbar {
         z-index: 999;
     }
     .navs {
